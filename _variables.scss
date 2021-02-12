@@ -1,0 +1,87 @@
+@mixin btn($color1,$color2,$rad){
+    background-color: $color2;
+    color: $color1;
+    border-radius: 18px;
+    border:$rad solid $color1 ;
+    padding: 5px 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@mixin box($color1,$color2){
+    padding: 40px;
+    color: $color1;
+    background-color: $color2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+            font-size: 20px;
+            padding: 20px;
+    }
+    h6{
+        color: $color1;
+        font-size: 13px;
+        font-weight: 100;
+    }
+    i{
+        font-size: 28px;
+        color: $color1;
+    }
+
+}
+
+@mixin ExpEdu($color1){
+    color: white;
+    .b{
+        color: grey;
+    }
+    background-color: $color1;
+    h6{
+        color: white;
+        font-size: 13px;
+        padding: 10px 0 ;
+        padding-bottom: 0px;
+        letter-spacing: 1.3px;
+    }
+    h2{
+        font-size: 26px;
+        padding-top: 20px;
+    }
+
+
+    .flex-row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        i,h3,p{
+            color: white;
+        }
+        i{
+            padding: 20px;
+            padding-left: 0;
+            font-size: 30px;
+        }
+        h3{
+            padding: 0;
+            font-size: 20px;
+            padding-top: 40px;
+            b{
+                font-size: 15px;
+                color: black;
+            }
+        }
+        p{
+            padding: 10px 0;
+            font-size: 15px;
+        }
+    }
+    .flex-col{
+        display: flex;
+        .black{
+            color: black;
+            font-weight: bold;
+        }
+        flex-direction: column;
+    }
+}
